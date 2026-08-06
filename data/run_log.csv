@@ -9,3 +9,11 @@ R-20260806-1730,2026-08-06 17:30 UTC,A-refresh,feed signaux recents,-,light,ok,3
 R-20260806-1730,2026-08-06 17:30 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,erreur: creator-chain funder candidate query failed,3,24,-,"outil principal de decouverte B1 indisponible, 3 tentatives (params par defaut, limit/min_score, sans params)"
 R-20260806-1730,2026-08-06 17:30 UTC,B-decouverte,decouverte alternative (createurs recents),-,light,ok - aucun candidat,3,24,-,"echantillon single-create funde CEX retourne, aucun score >= 90 (max observe 40)"
 R-20260806-1730,2026-08-06 17:30 UTC,C-ecriture,commit GitHub,"data/patterns.csv, data/wallets.csv, data/run_log.csv, data/run_summaries.md",github,ok,3,24,-,"commit unique, creation initiale + migration"
+R-20260806-1742,2026-08-06 17:42 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,"3 patterns / 54 wallets lus (SHA ok)"
+R-20260806-1742,2026-08-06 17:42 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,3 lignes (P-001/P-002/P-003 Ecarte)
+R-20260806-1742,2026-08-06 17:42 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,54 lignes
+R-20260806-1742,2026-08-06 17:42 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
+R-20260806-1742,2026-08-06 17:42 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260806-1742,2026-08-06 17:42 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,erreur: analyste occupe (deferred) apres 3 tentatives,3,24,-,"outil principal de decouverte indisponible ce run, meme comportement qu'au run R-20260806-1730"
+R-20260806-1742,2026-08-06 17:42 UTC,B-decouverte,decouverte alternative (createurs recents),-,light,gate B1 echouee: score < 90,3,24,-,"50 createurs recents passes en revue ; 4 finances par CEX labellise sans spray releves (scores 40-58 ; meilleurs funders Binance et Coinbase deja connus via P-002/P-001) -- aucun n'atteint le seuil 90, 0 ultra depense"
+R-20260806-1742,2026-08-06 17:42 UTC,C-ecriture,commit GitHub,"data/run_log.csv, data/run_summaries.md",github,ok,3,24,-,"patterns.csv et wallets.csv inchanges ce run -- pas de commit sur ces fichiers"
