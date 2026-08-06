@@ -61,3 +61,21 @@
 - Fichiers mis à jour : `wallets.csv` (+5 lignes, toutes Écartées), `run_log.csv`, `run_summaries.md` — commit unique sur `main`. `patterns.csv` inchangé (pas de commit sur ce fichier).
 - Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
 - Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
+
+## Run R-20260806-1925 — 2026-08-06 19:25 UTC
+
+### Refresh
+- 1 tracker actif ("Ring gangJEP - buyer 8St6e"), PnL 0, 0 rug, aucun trade. Ne correspond toujours à aucune ligne de `wallets.csv` → rien à recalculer.
+- Feed : aucune activité sur les trackers suivis sur les 7 derniers jours.
+- Aucun pattern en "En surveillance" ou "Rentable" à date → aucune transition automatique de statut.
+
+### Découverte — budget : 3 ultras alloués, 0 consommé, 0 heavy
+- 1034 wallets scannés (fenêtre 14j), 50 au-dessus du seuil de score 90. Après filtrage des 46 déjà connus (anti-redig 7 jours), 4 candidats neufs :
+  - 2 disqualifiés immédiatement en gate B1 pour spray (créateurs de 3 et 11 tokens sur leur propre wallet).
+  - 2 ont passé la gate B1 propre (score 95, single-launch) mais échoué en gate B2 : l'un a un funder direct non labellisé et un profil de hub/routeur (un flux Binance de 207 SOL existe bien dans son historique, mais noyé dans un volume de centaines de SOL sur des dizaines de transferts — aucun événement de financement isolé hair-thin exploitable, ce n'est pas un enfant Method-1 propre), l'autre financé par un hub générique déjà vu sur un wallet précédemment écarté.
+- Aucun candidat n'a atteint B3 → **0 ultra ni heavy dépensé ce run**, budget plein pour le prochain.
+
+### Bilan
+- Fichiers mis à jour : `wallets.csv` (+4 lignes, toutes Écartées), `run_log.csv`, `run_summaries.md` — commit unique sur `main`. `patterns.csv` inchangé (pas de commit sur ce fichier).
+- Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
+- Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
