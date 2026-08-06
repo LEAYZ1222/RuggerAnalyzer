@@ -42,3 +42,22 @@
 - Fichiers mis à jour : `run_log.csv`, `run_summaries.md` (commit unique sur `main`).
 - Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
 - Prochaine action humaine suggérée : rien à valider ce run. Si l'outil de découverte principal reste en échec sur plusieurs runs consécutifs, vérifier la disponibilité côté F Project.
+
+## Run R-20260806-1825 — 2026-08-06 18:25 UTC
+
+### Refresh
+- 1 tracker actif ("Ring gangJEP - buyer 8St6e"), PnL 0, 0 rug, aucun trade. Ne correspond toujours à aucune ligne de `wallets.csv` → rien à recalculer.
+- Feed : aucune activité sur les trackers suivis sur les 7 derniers jours.
+- Aucun pattern en "En surveillance" ou "Rentable" à date → aucune transition automatique de statut.
+
+### Découverte — budget : 3 ultras alloués, 0 consommé, 0 heavy
+- L'outil principal de découverte de wallets fraîchement financés a répondu normalement ce run (1035 wallets scannés sur 14j, 50 au-dessus du seuil de score 90).
+- 5 wallets neufs (jamais vus, hors fenêtre anti-redig de 7 jours) sur les 50 :
+  - 3 disqualifiés immédiatement en gate B1 pour **spray** (créateur de 4, 7 et 4 tokens sur son propre wallet — jamais un pattern CEX valide, quel que soit le score).
+  - 2 ont passé la gate B1 propre (score 95, créateur single-launch, pas de spray) mais **échoué en gate B2** : financeur trouvé dans les deux cas, mais aucun n'est un exchange labellisé (un funder générique à 0.0037 SOL, un hub à 154.32 SOL) → **Écartés**, aucun ultra engagé.
+- Aucun candidat n'a atteint B3 → **0 ultra ni heavy dépensé ce run**, budget plein pour le prochain.
+
+### Bilan
+- Fichiers mis à jour : `wallets.csv` (+5 lignes, toutes Écartées), `run_log.csv`, `run_summaries.md` — commit unique sur `main`. `patterns.csv` inchangé (pas de commit sur ce fichier).
+- Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
+- Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
