@@ -1,0 +1,11 @@
+Run ID,Timestamp,Phase,Action,Cible,Classe,Resultat,Ultras Restants,Heavies Restants,Duree (s),Notes
+R-20260806-1730,2026-08-06 17:30 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,GitHub data/ ne contenait que rugger_pipeline.csv (legacy) ; F Project repond (1 tracker actif liste)
+R-20260806-1730,2026-08-06 17:30 UTC,0-init,lecture CSV,data/patterns.csv,github,absent -> cree via migration,3,24,-,migration one-shot depuis rugger_pipeline.csv
+R-20260806-1730,2026-08-06 17:30 UTC,0-init,lecture CSV,data/wallets.csv,github,absent -> cree via migration,3,24,-,54 lignes migrees depuis rugger_pipeline.csv
+R-20260806-1730,2026-08-06 17:30 UTC,0-init,lecture CSV,data/run_log.csv,github,absent -> cree (entete),3,24,-,
+R-20260806-1730,2026-08-06 17:30 UTC,0-init,lecture CSV,data/run_summaries.md,github,absent -> cree,3,24,-,
+R-20260806-1730,2026-08-06 17:30 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP - buyer 8St6e) ; wallet cible absent de wallets.csv, aucune ligne liee a mettre a jour"
+R-20260806-1730,2026-08-06 17:30 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260806-1730,2026-08-06 17:30 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,erreur: creator-chain funder candidate query failed,3,24,-,"outil principal de decouverte B1 indisponible, 3 tentatives (params par defaut, limit/min_score, sans params)"
+R-20260806-1730,2026-08-06 17:30 UTC,B-decouverte,decouverte alternative (createurs recents),-,light,ok - aucun candidat,3,24,-,"echantillon single-create funde CEX retourne, aucun score >= 90 (max observe 40)"
+R-20260806-1730,2026-08-06 17:30 UTC,C-ecriture,commit GitHub,"data/patterns.csv, data/wallets.csv, data/run_log.csv, data/run_summaries.md",github,ok,3,24,-,"commit unique, creation initiale + migration"
