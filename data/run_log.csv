@@ -40,3 +40,11 @@ R-20260806-1925,2026-08-06 19:25 UTC,B-decouverte,gate B1 spray,F7ksW7sCgUVy4NCb
 R-20260806-1925,2026-08-06 19:25 UTC,B-decouverte,source de financement (B2),811fAKQZCqeSdgkA6i5wpnNPfYdZpT6VWgK14HtJMYLP,light,gate B2 echouee: pas de CEX,3,24,-,"funder direct non labellise (8.23 SOL) ; profil hub/routeur avec flux Binance noye dans le volume (207 SOL/12 tx) -- pas d'evenement hair-thin isole"
 R-20260806-1925,2026-08-06 19:25 UTC,B-decouverte,source de financement (B2),AqpkLaRV7fNgDrB2LMsxqFsMBqF4gJioFLhJzHB36YCu,light,gate B2 echouee: pas de CEX,3,24,-,"funder hub generique 8mowmVCEewZ9W2cEaQyQeQEeSxhGr1hvRviLwozwNtBt, 7.89 SOL, pas de label exchange"
 R-20260806-1925,2026-08-06 19:25 UTC,C-ecriture,commit GitHub,"data/wallets.csv, data/run_log.csv, data/run_summaries.md",github,ok,3,24,-,"patterns.csv inchange ce run -- pas de commit sur ce fichier ; 0 ultra / 0 heavy consommes"
+R-20260806-2026,2026-08-06 20:26 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,"3 patterns / 54 wallets lus (SHA ok)"
+R-20260806-2026,2026-08-06 20:26 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,3 lignes (P-001/P-002/P-003 Ecarte)
+R-20260806-2026,2026-08-06 20:26 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,54 lignes
+R-20260806-2026,2026-08-06 20:26 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
+R-20260806-2026,2026-08-06 20:26 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260806-2026,2026-08-06 20:26 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1ere tentative deferree (analyste occupe), 2e tentative ok -- 417 wallets scannes (14j), 50 au-dessus du seuil 90 -- 1 seul wallet neuf apres filtrage des 49 deja connus (anti-redig 7j)"
+R-20260806-2026,2026-08-06 20:26 UTC,B-decouverte,gate B1 spray,SLURahzredh2LEoFXnteqzvLh16ZjNu9ZLGLUNA3X64,light,gate B1 echouee: spray (dev_tokens=2),3,24,-,
+R-20260806-2026,2026-08-06 20:26 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,3,24,-,"commit a3e5626 -- patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
