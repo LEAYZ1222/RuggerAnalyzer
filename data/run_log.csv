@@ -48,3 +48,11 @@ R-20260806-2026,2026-08-06 20:26 UTC,A-refresh,feed signaux recents,-,light,ok,3
 R-20260806-2026,2026-08-06 20:26 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1ere tentative deferree (analyste occupe), 2e tentative ok -- 417 wallets scannes (14j), 50 au-dessus du seuil 90 -- 1 seul wallet neuf apres filtrage des 49 deja connus (anti-redig 7j)"
 R-20260806-2026,2026-08-06 20:26 UTC,B-decouverte,gate B1 spray,SLURahzredh2LEoFXnteqzvLh16ZjNu9ZLGLUNA3X64,light,gate B1 echouee: spray (dev_tokens=2),3,24,-,
 R-20260806-2026,2026-08-06 20:26 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,3,24,-,"commit a3e5626 -- patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
+R-20260806-2124,2026-08-06 21:24 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,"3 patterns / 54 wallets lus (SHA ok)"
+R-20260806-2124,2026-08-06 21:24 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,3 lignes (P-001/P-002/P-003 Ecarte)
+R-20260806-2124,2026-08-06 21:24 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,54 lignes
+R-20260806-2124,2026-08-06 21:24 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
+R-20260806-2124,2026-08-06 21:24 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260806-2124,2026-08-06 21:24 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,erreur: analyste occupe (deferred) apres 3 tentatives,3,24,-,outil principal de decouverte indisponible ce run
+R-20260806-2124,2026-08-06 21:24 UTC,B-decouverte,decouverte alternative (createurs recents),-,light,gate B1 echouee: score < 90,3,24,-,"50 createurs recents passes en revue ; meilleur score observe 60 (single-launch, funde par l'exchange deja connu via P-001) -- aucun n'atteint le seuil 90, 0 ultra depense"
+R-20260806-2124,2026-08-06 21:24 UTC,C-ecriture,commit GitHub,"data/run_log.csv, data/run_summaries.md",github,ok,3,24,-,"patterns.csv et wallets.csv inchanges ce run -- pas de commit sur ces fichiers"
