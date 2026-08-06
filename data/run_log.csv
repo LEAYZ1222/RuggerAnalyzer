@@ -56,3 +56,19 @@ R-20260806-2124,2026-08-06 21:24 UTC,A-refresh,feed signaux recents,-,light,ok,3
 R-20260806-2124,2026-08-06 21:24 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,erreur: analyste occupe (deferred) apres 3 tentatives,3,24,-,outil principal de decouverte indisponible ce run
 R-20260806-2124,2026-08-06 21:24 UTC,B-decouverte,decouverte alternative (createurs recents),-,light,gate B1 echouee: score < 90,3,24,-,"50 createurs recents passes en revue ; meilleur score observe 60 (single-launch, funde par l'exchange deja connu via P-001) -- aucun n'atteint le seuil 90, 0 ultra depense"
 R-20260806-2124,2026-08-06 21:24 UTC,C-ecriture,commit GitHub,"data/run_log.csv, data/run_summaries.md",github,ok,3,24,-,"patterns.csv et wallets.csv inchanges ce run -- pas de commit sur ces fichiers"
+R-20260806-2224,2026-08-06 22:24 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,"3 patterns / 64 wallets lus (SHA ok)"
+R-20260806-2224,2026-08-06 22:24 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,3 lignes (P-001/P-002/P-003 Ecarte)
+R-20260806-2224,2026-08-06 22:24 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,64 lignes
+R-20260806-2224,2026-08-06 22:24 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
+R-20260806-2224,2026-08-06 22:24 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260806-2224,2026-08-06 22:24 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1036 wallets scannes (14j), 50 au-dessus du seuil 90 -- 9 wallets neufs apres filtrage des 41 deja connus"
+R-20260806-2224,2026-08-06 22:24 UTC,B-decouverte,gate B1 spray,2FMwyRw5CZS5qU6rixeQEH6Sqw48oTAYCrmm2EK5pjza,light,gate B1 echouee: spray (dev_tokens=2),3,24,-,
+R-20260806-2224,2026-08-06 22:24 UTC,B-decouverte,gate B1 spray,6k7zyHC7dyype95h5NNWxT8rdY9dMRyEBek2auVDZMAW,light,gate B1 echouee: spray (dev_tokens=3),3,24,-,
+R-20260806-2224,2026-08-06 22:24 UTC,B-decouverte,gate B1 spray,BfSsqepXDoqWHFMSGavYbqY8P3MkL9aE41HLTV2Vfbi5,light,gate B1 echouee: spray (dev_tokens=2),3,24,-,
+R-20260806-2224,2026-08-06 22:24 UTC,B-decouverte,gate B1 spray,DfdJfVfhEdY3ZuCS5QF1DDMryeyEjH365Cr9ZoLGbXLP,light,gate B1 echouee: spray (dev_tokens=4),3,24,-,
+R-20260806-2224,2026-08-06 22:24 UTC,B-decouverte,gate B1 spray,HmdqL6RzwGidqYyXeTHqu68mg3QDCqEnxRwxRxh3dGau,light,gate B1 echouee: spray (dev_tokens=15),3,24,-,
+R-20260806-2224,2026-08-06 22:24 UTC,B-decouverte,gate B1 spray,HeGzjHhVebWifFdUj9gZwNKwj7x2Y2ZD81D41rF6ADx1,light,gate B1 echouee: spray (dev_tokens=4),3,24,-,
+R-20260806-2224,2026-08-06 22:24 UTC,B-decouverte,gate B1 spray,HoKiWhcU3YBN9f5Uxj1bBLkcWkw5iDEQbPiiU6EnYCwQ,light,gate B1 echouee: spray (dev_tokens=16),3,24,-,
+R-20260806-2224,2026-08-06 22:24 UTC,B-decouverte,source de financement (B2),FjeaKDFAgexEPZbAFHwE4cL1MFvn1o6EL1qehcmVStCX,light,gate B2 echouee: pas de CEX,3,24,-,"primary funder 2TR35vZ2gaNdHm5gmpvXARz8Sr84jpz9TjLuHwAHYpx6 (3.5 SOL, scheme mother), 22 inbound funders passes en revue -- aucun label exchange"
+R-20260806-2224,2026-08-06 22:24 UTC,B-decouverte,source de financement (B2),2YF4WdLM6s2yKUCarrtBCB1jbjxeHUjoghPrJShDaqvW,light,gate B2 echouee: pas de CEX,3,24,-,"primary funder 4kAsV9ZBCZV6dvgpxxf5Yes2ZKUQ42nJvbwYUeUR9PhS (1.1667 SOL, scheme mother), 7 inbound funders passes en revue -- aucun label exchange"
+R-20260806-2224,2026-08-06 22:24 UTC,C-ecriture,commit GitHub,"data/wallets.csv, data/run_log.csv, data/run_summaries.md",github,ok,3,24,-,"commit 9ec419f -- patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
