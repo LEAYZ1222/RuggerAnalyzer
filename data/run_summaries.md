@@ -514,3 +514,20 @@
 - Fichiers mis à jour : `wallets.csv` (+2 lignes, toutes Écartées, commit `4b6cb053`), `run_log.csv`, `run_summaries.md` — sur `main`. `patterns.csv` inchangé (pas de commit sur ce fichier).
 - Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
 - Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
+
+## Run R-20260807-2036 — 2026-08-07 20:36 UTC
+
+### Refresh
+- 1 tracker actif ("Ring gangJEP - buyer 8St6e"), PnL 0, 0 rug, aucun trade. Ne correspond toujours à aucune ligne de `wallets.csv` → rien à recalculer.
+- Feed : aucune activité sur les trackers suivis sur les 7 derniers jours.
+- Aucun pattern en "En surveillance" ou "Rentable" à date → aucune transition automatique de statut. Les 4 patterns existants (P-001 à P-004) restent Écartés, inchangés.
+
+### Découverte — budget : 3 ultras alloués, 0 consommé, 0 heavy
+- 150 wallets au-dessus du seuil de score 90 (deux premières tentatives différées par l'analyste, 3e réussie). Après filtrage des 149 déjà connus, 1 seul candidat neuf :
+  - `6oA8nS...T21uMV` (score 95) : disqualifié immédiatement en gate B1 pour spray (créateur de 17 tokens sur son propre wallet).
+- Aucun candidat n'a atteint la gate B2 → **0 ultra ni heavy dépensé ce run**, budget plein pour le prochain.
+
+### Bilan
+- Fichiers mis à jour : `wallets.csv` (+1 ligne, Écartée, commit `cf1ed1e`), `run_log.csv`, `run_summaries.md` — sur `main`. `patterns.csv` inchangé (pas de commit sur ce fichier).
+- Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
+- Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
