@@ -425,3 +425,22 @@
 - Fichiers mis à jour : `wallets.csv` (+3 lignes, toutes Écartées, commit `9581852`), `run_log.csv`, `run_summaries.md` — sur `main`. `patterns.csv` inchangé (pas de commit sur ce fichier).
 - Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé ce run).
 - Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
+
+## Run R-20260807-1525 — 2026-08-07 15:25 UTC
+
+### Refresh
+- 1 tracker actif ("Ring gangJEP - buyer 8St6e"), PnL 0, 0 rug, aucun trade. Ne correspond toujours à aucune ligne de `wallets.csv` → rien à recalculer.
+- Feed : aucune activité sur les trackers suivis sur les 7 derniers jours.
+- Aucun pattern en "En surveillance" ou "Rentable" à date → aucune transition automatique de statut. Les 4 patterns existants (P-001 à P-004) restent Écartés, inchangés.
+
+### Découverte — budget : 3 ultras alloués, 0 consommé, 0 heavy
+- 412 wallets scannés (fenêtre 14j), 50 au-dessus du seuil de score 90. Après filtrage des 46 déjà connus, 4 candidats neufs :
+  - `GMMnee...dXgFf` (score 95) et `Hcrr3q...b3JDVz` (score 100) : disqualifiés immédiatement en gate B1 pour spray (créateurs de 7 et 12 tokens sur leur propre wallet).
+  - `4q4iYC...HVQVoWq` (score 95) : disqualifié en gate B1 pour spray (créateur de 5 tokens).
+  - `8CkcWo...Q9KiL` (score 95, signal brut à 1 seul token) : vérification profonde par prudence — en réalité 4 tokens créés, tous dumpés. Financé par le même exchange déjà repéré deux fois cette dernière journée sur des near-miss (funder CEX réel mais créateur spray) — troisième occurrence du même funder CEX associé à du spray. Disqualifié en gate B1.
+- Aucun candidat n'a atteint la gate B2 → **0 ultra ni heavy dépensé ce run**, budget plein pour le prochain.
+
+### Bilan
+- Fichiers mis à jour : `wallets.csv` (+4 lignes, toutes Écartées), `run_log.csv`, `run_summaries.md` — sur `main`. `patterns.csv` inchangé (pas de commit sur ce fichier).
+- Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé ce run).
+- Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente). À noter : le même funder CEX (`iGdFcQoyR2M...NSdwu`) a maintenant produit 3 créateurs spray sur la période — le flux de financement CEX est actif, mais aucun de ses enfants n'est encore propre (spray-free) pour justifier une recherche CEX profonde.
