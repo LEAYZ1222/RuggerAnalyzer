@@ -149,3 +149,23 @@
 - Fichiers mis à jour : `wallets.csv` (+5 lignes, toutes Écartées, commit `d2a9630`), `run_log.csv`, `run_summaries.md` — sur `main`. `patterns.csv` inchangé (pas de commit sur ce fichier).
 - Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
 - Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
+
+## Run R-20260807-0029 — 2026-08-07 00:29 UTC
+
+### Refresh
+- 1 tracker actif ("Ring gangJEP - buyer 8St6e"), PnL 0, 0 rug, aucun trade. Ne correspond toujours à aucune ligne de `wallets.csv` → rien à recalculer.
+- Feed : aucune activité sur les trackers suivis sur les 7 derniers jours.
+- Aucun pattern en "En surveillance" ou "Rentable" à date → aucune transition automatique de statut.
+
+### Découverte — budget : 3 ultras alloués, 0 consommé, 0 heavy
+- Run chargé : 1034 wallets scannés (fenêtre 14j), 159 au-dessus du seuil de score 90 — nettement plus que les runs précédents. Après filtrage des 77 déjà connus, **82 candidats neufs**.
+- Vérification individuelle des 10 candidats signalés le plus propres (1 seul token créé selon le scanner) : 4 se sont révélés être du spray réel une fois le compte de tokens vérifié en profondeur (2 à 4 tokens créés, pas 1) — le signal brut du scanner de découverte sous-estimait. Les 6 restants n'ont **aucun CEX identifiable** (financeur générique ou hub, pas de label exchange ; un cas avec 156 créateurs liés au même financeur, profil "ferme de lancement").
+- Contrôle qualité sur 11 candidats supplémentaires signalés à 2 créations : les 11 confirmés spray réel (jusqu'à 46 tokens créés pour le pire cas) → fiabilise le signal du scanner pour le reste du lot.
+- **Deux near-miss notables** : `GrhYtk4...556PP` et `HV7oqX...SSYyL` sont bel et bien financés par un exchange réel (montant exact) — mais l'un a créé 3 tokens, l'autre 2. Spray disqualifie immédiatement, quel que soit le funder ou le score (règle non négociable du desk).
+- Les 71 candidats restants (2 à 24 créations selon le scanner) écartés en masse sur le même signal spray, désormais fiabilisé.
+- **Aucun candidat n'a atteint la gate B2 propre (spray-free + CEX confirmé)** → 0 ultra ni heavy dépensé, budget plein pour le prochain run.
+
+### Bilan
+- Fichiers mis à jour : `wallets.csv` (+82 lignes, toutes Écartées, commit `c03505f`), `run_log.csv`, `run_summaries.md` — sur `main`. `patterns.csv` inchangé (pas de commit sur ce fichier).
+- Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
+- Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente). À noter pour information : deux créateurs financés par un exchange réel repérés ce run, mais tous deux disqualifiés pour spray — rien d'actionnable, juste un signe que le flux CEX est bien vivant en ce moment.
