@@ -531,3 +531,24 @@
 - Fichiers mis à jour : `wallets.csv` (+1 ligne, Écartée, commit `cf1ed1e`), `run_log.csv`, `run_summaries.md` — sur `main`. `patterns.csv` inchangé (pas de commit sur ce fichier).
 - Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
 - Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
+
+## Run R-20260807-2123 — 2026-08-07 21:23 UTC
+
+### Refresh
+- 1 tracker actif ("Ring gangJEP - buyer 8St6e"), PnL 0, 0 rug, aucun trade. Ne correspond toujours à aucune ligne de `wallets.csv` → rien à recalculer.
+- Feed : aucune activité sur les trackers suivis sur les 7 derniers jours.
+- Aucun pattern en "En surveillance" ou "Rentable" à date → aucune transition automatique de statut. Les 4 patterns existants (P-001 à P-004) restent Écartés, inchangés.
+
+### Découverte — budget : 3 ultras alloués, 0 consommé, 0 heavy
+- Outil principal de découverte de wallets fraîchement financés indisponible ce run (3 tentatives : paramètres par défaut, min_score seul, sans aucun paramètre) — même erreur technique que sur plusieurs runs précédents.
+- Bascule sur la voie de secours (intel créateurs récents, fenêtre élargie aux single-launch) : 50 créateurs récents passés en revue, triés par activité la plus fraîche.
+  - Meilleurs profils single-launch financés par un exchange labellisé (Binance, KuCoin) : scores 26 à 64 — tous loin sous le seuil de 90.
+  - Un funder KuCoin déjà connu (lié à P-003/P-004) est désormais associé à un créateur de 4 tokens sur ce lot — spray, rien d'actionnable.
+  - Le funder CEX déjà repéré 3 fois sur des near-miss spray (`iGdFcQoyR2M...NSdwu`) réapparaît, toujours associé à du spray (599 tokens sur ce wallet).
+- Aucun candidat n'a atteint la gate B1 → **0 ultra ni heavy dépensé ce run**, budget plein pour le prochain.
+
+### Bilan
+- Aucun changement sur `patterns.csv` / `wallets.csv` ce run — pas de commit sur ces fichiers.
+- Fichiers mis à jour : `run_log.csv`, `run_summaries.md` (commit unique sur `main`).
+- Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
+- Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
