@@ -195,3 +195,12 @@ R-20260807-1125,2026-08-07 11:25 UTC,B-decouverte,gate B1 spray,AugGWnLPi71otCfu
 R-20260807-1125,2026-08-07 11:25 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,3,24,-,"commit 1fa0d68 -- patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
 R-20260807-1125,2026-08-07 11:25 UTC,C-ecriture,correction post-commit,data/wallets.csv,github,ok,3,24,-,"commit 58257dc -- 4 lignes deformees par la retranscription manuelle du commit 1fa0d68 (KuCoin note exhaustive/exhaustif, dev_tokens intervertis sur BfSsqepX/9Nw9L/AugGWnLP) detectees par verification post-commit (re-fetch + diff) et corrigees ; contenu final verifie octet-pour-octet"
 R-20260807-1125,2026-08-07 11:25 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
+R-20260807-1243,2026-08-07 12:43 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,3 patterns / 171 wallets lus (SHA ok)
+R-20260807-1243,2026-08-07 12:43 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,3 lignes (P-001/P-002/P-003 Ecarte)
+R-20260807-1243,2026-08-07 12:43 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,171 lignes
+R-20260807-1243,2026-08-07 12:43 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
+R-20260807-1243,2026-08-07 12:43 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260807-1243,2026-08-07 12:43 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1029 wallets scannes (14j), 148 au-dessus du seuil 90 -- 1 wallet neuf apres filtrage des 147 deja connus"
+R-20260807-1243,2026-08-07 12:43 UTC,B-decouverte,gate B1 spray,AcYqW46XA6WeJjEpUPUw4d4ahpkYvLcd1NzpxaPsvPHa,light,gate B1 echouee: spray (dev_tokens=14),3,24,-,
+R-20260807-1243,2026-08-07 12:43 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,3,24,-,"+1 ligne (0 Valide, 1 Ecarte) ; patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
+R-20260807-1243,2026-08-07 12:43 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
