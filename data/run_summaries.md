@@ -385,3 +385,24 @@
 - Fichiers mis à jour : `wallets.csv` (+1 ligne, Écartée), `run_log.csv`, `run_summaries.md` — sur `main`. `patterns.csv` inchangé (pas de commit sur ce fichier).
 - Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
 - Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
+
+## Run R-20260807-1334 — 2026-08-07 13:34 UTC
+
+### Refresh
+- 1 tracker actif ("Ring gangJEP - buyer 8St6e"), PnL 0, 0 rug, aucun trade. Ne correspond toujours à aucune ligne de `wallets.csv` → rien à recalculer.
+- Feed : aucune activité sur les trackers suivis sur les 7 derniers jours.
+- Aucun pattern en "En surveillance" ou "Rentable" à date → aucune transition automatique de statut. Les patterns existants (P-001, P-002, P-003) restent Écartés, inchangés.
+
+### Découverte — budget : 3 ultras alloués, 1 consommé, 1 heavy
+- 1027 wallets scannés (fenêtre 14j), 147 au-dessus du seuil de score 90. Après filtrage des 146 déjà connus, 1 seul candidat neuf :
+  - `EA2SEMUU...tybQenY` (score 95) : single-launch confirmé, spray-free, financé par un exchange labellisé (KuCoin) → gates B1 et B2 passées.
+  - Recherche CEX profonde (1 ultra) : montant exact récupéré, **5.244 SOL**, bande hair-thin 5.2439–5.2441. Le premier passage (4 pages / 800 wallets) n'a trouvé aucun frère hors le créateur lui-même.
+  - Pour ne pas conclure trop vite sur un financeur CEX à fort volume, scan complémentaire exhaustif (1 heavy, 40 pages / 8000 signatures) sur la même bande : toujours **0 enfant trouvé**.
+  - → Gate B4 ratée (pas de siblings, pattern non reproductible). `P-004` créé, statut **Écarté**. Le seul token de ce créateur a d'ailleurs gagné (+453.79% pic), mais un seul événement de financement isolé ne fait pas un pattern surveillable.
+  - À noter : même adresse CEX (KuCoin) que le pattern `P-003` déjà en base, mais montant différent (5.244 contre 3.424 SOL) — deux événements isolés distincts, pas un doublon.
+- 1 ultra et 1 heavy consommés sur les 3 ultras / 24 heavies alloués → budget restant pour le prochain run : 2 ultras / 23 heavies (fenêtre 15 min).
+
+### Bilan
+- Fichiers mis à jour : `patterns.csv` (+1 ligne, P-004 Écarté), `wallets.csv` (+1 ligne, Écartée), `run_log.csv`, `run_summaries.md` — commit unique sur `main`.
+- Budget restant pour le prochain run : 2 ultras / 23 heavies consommés ce run, la fenêtre 15 min se reconstitue normalement pour le run suivant.
+- Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).

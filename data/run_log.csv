@@ -204,3 +204,14 @@ R-20260807-1243,2026-08-07 12:43 UTC,B-decouverte,decouverte de wallets recents 
 R-20260807-1243,2026-08-07 12:43 UTC,B-decouverte,gate B1 spray,AcYqW46XA6WeJjEpUPUw4d4ahpkYvLcd1NzpxaPsvPHa,light,gate B1 echouee: spray (dev_tokens=14),3,24,-,
 R-20260807-1243,2026-08-07 12:43 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,3,24,-,"+1 ligne (0 Valide, 1 Ecarte) ; patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
 R-20260807-1243,2026-08-07 12:43 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
+R-20260807-1334,2026-08-07 13:34 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,"3 patterns / 172 wallets lus (SHA ok)"
+R-20260807-1334,2026-08-07 13:34 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,4 lignes (P-001/P-002/P-003 Ecarte)
+R-20260807-1334,2026-08-07 13:34 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,172 lignes
+R-20260807-1334,2026-08-07 13:34 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
+R-20260807-1334,2026-08-07 13:34 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260807-1334,2026-08-07 13:34 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1027 wallets scannes (14j), 147 au-dessus du seuil 90 -- 1 wallet neuf apres filtrage des 146 deja connus"
+R-20260807-1334,2026-08-07 13:34 UTC,B-decouverte,source de financement (B2),EA2SEMUUdA7p253rYwVThrN3X63rRJ5bPBchjtybQenY,light,ok,3,24,-,"funder KuCoin (exchange), single-launch confirme (token_count=1), spray-free"
+R-20260807-1334,2026-08-07 13:34 UTC,B-decouverte,recherche CEX profonde (B3),EA2SEMUUdA7p253rYwVThrN3X63rRJ5bPBchjtybQenY,ultra,ok,2,24,-,"montant exact 5.244 SOL KuCoin, bande 5.2439-5.2441, hair-thin scan 4 pages/800 wallets -- 0 sibling hors lui-meme (pattern_holds=false)"
+R-20260807-1334,2026-08-07 13:34 UTC,B-decouverte,table de financement (B4),EA2SEMUUdA7p253rYwVThrN3X63rRJ5bPBchjtybQenY,heavy,gate B4 echouee: pas de siblings,2,23,-,"scan exhaustif complementaire funded_by paginate: 40 pages / 8000 signatures scannees sur bande hair-thin 5.2439-5.2441 -- 0 enfant trouve -- P-004 cree Ecarte (meme CEX KuCoin que P-003, montant different 5.244 vs 3.424)"
+R-20260807-1334,2026-08-07 13:34 UTC,C-ecriture,commit GitHub,"data/patterns.csv, data/wallets.csv, data/run_log.csv, data/run_summaries.md",github,ok,2,23,-,"+1 pattern (P-004 Ecarte), +1 wallet ; 1 ultra / 1 heavy consommes ce run"
+R-20260807-1334,2026-08-07 13:34 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,2,23,-,
