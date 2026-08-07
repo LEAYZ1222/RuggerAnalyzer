@@ -215,3 +215,14 @@ R-20260807-1334,2026-08-07 13:34 UTC,B-decouverte,recherche CEX profonde (B3),EA
 R-20260807-1334,2026-08-07 13:34 UTC,B-decouverte,table de financement (B4),EA2SEMUUdA7p253rYwVThrN3X63rRJ5bPBchjtybQenY,heavy,gate B4 echouee: pas de siblings,2,23,-,"scan exhaustif complementaire funded_by paginate: 40 pages / 8000 signatures scannees sur bande hair-thin 5.2439-5.2441 -- 0 enfant trouve -- P-004 cree Ecarte (meme CEX KuCoin que P-003, montant different 5.244 vs 3.424)"
 R-20260807-1334,2026-08-07 13:34 UTC,C-ecriture,commit GitHub,"data/patterns.csv, data/wallets.csv, data/run_log.csv, data/run_summaries.md",github,ok,2,23,-,"+1 pattern (P-004 Ecarte), +1 wallet ; 1 ultra / 1 heavy consommes ce run"
 R-20260807-1334,2026-08-07 13:34 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,2,23,-,
+R-20260807-1431,2026-08-07 14:31 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,2,23,-,4 patterns / 174 wallets lus (SHA ok)
+R-20260807-1431,2026-08-07 14:31 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,2,23,-,4 lignes (P-001/P-002/P-003/P-004 Ecarte)
+R-20260807-1431,2026-08-07 14:31 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,2,23,-,174 lignes
+R-20260807-1431,2026-08-07 14:31 UTC,A-refresh,refresh trackers actifs,-,light,ok,2,23,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
+R-20260807-1431,2026-08-07 14:31 UTC,A-refresh,feed signaux recents,-,light,ok,2,23,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260807-1431,2026-08-07 14:31 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,2,23,-,"1029 wallets scannes (14j), 148 au-dessus du seuil 90 -- 3 wallets neufs apres filtrage des 145 deja connus"
+R-20260807-1431,2026-08-07 14:31 UTC,B-decouverte,gate B1 spray,EJw6EaXHkspLsVEE4i6P76gYFDvebVvZwGAhsHgwwh7x,light,gate B1 echouee: spray (dev_tokens=6),2,23,-,
+R-20260807-1431,2026-08-07 14:31 UTC,B-decouverte,gate B1 spray,BCCX7kYEUL93sUx2kptb6taZSoBkjzxM3PJGdJi9WNqG,light,gate B1 echouee: spray (dev_tokens=6),2,23,-,
+R-20260807-1431,2026-08-07 14:31 UTC,B-decouverte,gate B1 spray,8mF12jnngYUNJwGSJCJR92oH62ST4Cxjvqm9NJTF3YHE,light,gate B1 echouee: spray (dev_tokens=13),2,23,-,
+R-20260807-1431,2026-08-07 14:31 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,2,23,-,"commit 9581852 -- patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
+R-20260807-1431,2026-08-07 14:31 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,2,23,-,
