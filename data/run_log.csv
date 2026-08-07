@@ -292,3 +292,14 @@ R-20260807-2123,2026-08-07 21:23 UTC,B-decouverte,decouverte de wallets recents 
 R-20260807-2123,2026-08-07 21:23 UTC,B-decouverte,decouverte alternative (createurs recents min_tokens=0),-,light,gate B1 echouee: score < 90,3,24,-,"50 createurs recents passes en revue (tri recent) ; meilleurs single-launch finances par exchange labellise (Binance/KuCoin) scores 26 a 64 -- aucun n'atteint le seuil 90, 0 ultra depense"
 R-20260807-2123,2026-08-07 21:23 UTC,C-ecriture,commit GitHub,"data/run_log.csv, data/run_summaries.md",github,ok,3,24,-,"patterns.csv et wallets.csv inchanges ce run -- pas de commit sur ces fichiers"
 R-20260807-2123,2026-08-07 21:23 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
+R-20260807-2225,2026-08-07 22:25 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,"4 patterns / 187 wallets lus (SHA ok)"
+R-20260807-2225,2026-08-07 22:25 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,4 lignes (P-001/P-002/P-003/P-004 Ecarte)
+R-20260807-2225,2026-08-07 22:25 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,187 lignes
+R-20260807-2225,2026-08-07 22:25 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
+R-20260807-2225,2026-08-07 22:25 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260807-2225,2026-08-07 22:25 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1035 wallets scannes (14j), 50 au-dessus du seuil de score 90 -- 3 wallets neufs apres filtrage des 47 deja connus"
+R-20260807-2225,2026-08-07 22:25 UTC,B-decouverte,gate B1 spray,H1ppjpknMeouxoPmqXx829P1EfvuaX1L4gCHvC7EkQ7a,light,gate B1 echouee: spray (dev_tokens=8),3,24,-,
+R-20260807-2225,2026-08-07 22:25 UTC,B-decouverte,gate B1 spray,E94dd6pnFhE7LNbC7oSbyWmCCQ9kNoEhSa6cKN6brSAm,light,gate B1 echouee: spray (dev_tokens=7),3,24,-,
+R-20260807-2225,2026-08-07 22:25 UTC,B-decouverte,gate B1 spray,ChumSMhTr4TcentKv1EPe5cyxCrJCzGwZ4AcSLUCCAFm,light,gate B1 echouee: spray (dev_tokens=2),3,24,-,
+R-20260807-2225,2026-08-07 22:25 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,3,24,-,"+3 lignes (0 Valide, 3 Ecarte) ; patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
+R-20260807-2225,2026-08-07 22:25 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
