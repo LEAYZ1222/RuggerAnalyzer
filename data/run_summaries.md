@@ -256,3 +256,23 @@
 - Fichiers mis à jour : `run_log.csv`, `run_summaries.md` (commit unique sur `main`).
 - Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
 - Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
+
+## Run R-20260807-0628 — 2026-08-07 06:28 UTC
+
+### Refresh
+- 1 tracker actif ("Ring gangJEP - buyer 8St6e"), PnL 0, 0 rug, aucun trade. Ne correspond toujours à aucune ligne de `wallets.csv` → rien à recalculer.
+- Feed : aucune activité sur les trackers suivis sur les 7 derniers jours.
+- Aucun pattern en "En surveillance" ou "Rentable" à date → aucune transition automatique de statut.
+
+### Découverte — budget : 3 ultras alloués, 0 consommé, 0 heavy
+- Outil principal de découverte de wallets fraîchement financés indisponible ce run : différé deux fois par l'analyste puis échec technique au 3e essai.
+- Bascule sur la voie de secours (intel créateurs récents), fenêtre élargie aux créateurs single-launch (1 seul token créé) pour ne pas rater un candidat propre : 50 créateurs récents passés en revue.
+  - 5 wallets single-launch financés par un exchange labellisé identifiés — tous par la même adresse déjà connue via le pattern P-002 (Binance, écarté pour absence de sibling). Scores qualité 32 à 48 sur ce lot.
+  - Aucun ne franchit le seuil de score 90 de la gate B1 → **aucun candidat retenu, 0 ultra ni heavy dépensé**.
+- Rien à signaler côté siblings, spray ou near-miss ce run : le point de blocage est uniquement le score, pas le financement ni le comportement.
+
+### Bilan
+- Aucun changement sur `patterns.csv` / `wallets.csv` ce run — pas de commit sur ces fichiers.
+- Fichiers mis à jour : `run_log.csv`, `run_summaries.md` (commit unique sur `main`).
+- Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
+- Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
