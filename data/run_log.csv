@@ -264,3 +264,13 @@ R-20260807-1816,2026-08-07 18:16 UTC,A-refresh,feed signaux recents,-,light,ok,3
 R-20260807-1816,2026-08-07 18:16 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1034 wallets scannes (14j), 50 au-dessus du seuil 90 -- 0 wallet neuf, 100% deja connus (anti-redig 7j)"
 R-20260807-1816,2026-08-07 18:16 UTC,C-ecriture,commit GitHub,"data/run_log.csv, data/run_summaries.md",github,ok,3,24,-,"patterns.csv et wallets.csv inchanges ce run -- pas de commit sur ces fichiers"
 R-20260807-1816,2026-08-07 18:16 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
+R-20260807-1922,2026-08-07 19:22 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,"4 patterns / 182 wallets lus (SHA ok)"
+R-20260807-1922,2026-08-07 19:22 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,4 lignes (P-001/P-002/P-003/P-004 Ecarte)
+R-20260807-1922,2026-08-07 19:22 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,182 lignes
+R-20260807-1922,2026-08-07 19:22 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
+R-20260807-1922,2026-08-07 19:22 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260807-1922,2026-08-07 19:22 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1035 wallets scannes (14j), 150 au-dessus du seuil 90 -- 2 wallets neufs apres filtrage des 148 deja connus"
+R-20260807-1922,2026-08-07 19:22 UTC,B-decouverte,gate B1 spray,AuyuBikfmktzGA4m7GkrZ199m3T5D5UFY52P5B9C1Vri,light,gate B1 echouee: spray (dev_tokens=2),3,24,-,
+R-20260807-1922,2026-08-07 19:22 UTC,B-decouverte,gate B1 spray,CbqJWicg343WQcLXtoNPKdyEKgZY8vN3MyfwfjnzoGe1,light,gate B1 echouee: spray (dev_tokens=8),3,24,-,
+R-20260807-1922,2026-08-07 19:22 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,3,24,-,"commit 4b6cb053 -- +2 lignes (0 Valide, 2 Ecarte) ; patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
+R-20260807-1922,2026-08-07 19:22 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
