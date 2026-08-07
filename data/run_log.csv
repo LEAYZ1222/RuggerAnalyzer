@@ -303,3 +303,11 @@ R-20260807-2225,2026-08-07 22:25 UTC,B-decouverte,gate B1 spray,E94dd6pnFhE7LNbC
 R-20260807-2225,2026-08-07 22:25 UTC,B-decouverte,gate B1 spray,ChumSMhTr4TcentKv1EPe5cyxCrJCzGwZ4AcSLUCCAFm,light,gate B1 echouee: spray (dev_tokens=2),3,24,-,
 R-20260807-2225,2026-08-07 22:25 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,3,24,-,"+3 lignes (0 Valide, 3 Ecarte) ; patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
 R-20260807-2225,2026-08-07 22:25 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
+R-20260807-2323,2026-08-07 23:23 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,"4 patterns / 188 wallets lus (SHA ok)"
+R-20260807-2323,2026-08-07 23:23 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,4 lignes (P-001/P-002/P-003/P-004 Ecarte)
+R-20260807-2323,2026-08-07 23:23 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,188 lignes
+R-20260807-2323,2026-08-07 23:23 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
+R-20260807-2323,2026-08-07 23:23 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260807-2323,2026-08-07 23:23 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1035 wallets scannes (14j), 148 au-dessus du seuil de score 90 -- 0 candidat neuf, lot entier deja connu"
+R-20260807-2323,2026-08-07 23:23 UTC,C-ecriture,pas de changement,"data/patterns.csv, data/wallets.csv",-,ok,3,24,-,aucun commit sur ces fichiers ce run
+R-20260807-2323,2026-08-07 23:23 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
