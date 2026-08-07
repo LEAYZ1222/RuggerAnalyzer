@@ -22,7 +22,7 @@ R-20260806-1825,2026-08-06 18:25 UTC,0-init,lecture CSV,data/patterns.csv,github
 R-20260806-1825,2026-08-06 18:25 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,54 lignes
 R-20260806-1825,2026-08-06 18:25 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
 R-20260806-1825,2026-08-06 18:25 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
-R-20260806-1825,2026-08-06 18:25 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"outil principal de decouverte operationnel ce run (50 wallets score>=90 sur 1035 scannes, fenetre 14j) -- 5 nouveaux absents de wallets.csv"
+R-20260806-1825,2026-08-06 18:25 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"50 wallets score>=90 sur 1035 scannes, fenetre 14j -- 5 nouveaux absents de wallets.csv"
 R-20260806-1825,2026-08-06 18:25 UTC,B-decouverte,gate B1 spray,HNYaRpeWVukv2pDihHQ9B6YA8UzsPf8eC8npWebQGed7,light,gate B1 echouee: spray (dev_tokens=4),3,24,-,
 R-20260806-1825,2026-08-06 18:25 UTC,B-decouverte,gate B1 spray,7nUVLZ5xD9hcpWkY8png5AuKifWnjKta6jWewtF54UJG,light,gate B1 echouee: spray (dev_tokens=7),3,24,-,
 R-20260806-1825,2026-08-06 18:25 UTC,B-decouverte,gate B1 spray,31KhNoxHnoscN4Ehzd2XE9ntauB5EeAk4L5Uw9s8H6RP,light,gate B1 echouee: spray (dev_tokens=4),3,24,-,
@@ -106,3 +106,11 @@ R-20260807-0222,2026-08-07 02:22 UTC,B-decouverte,decouverte de wallets recents 
 R-20260807-0222,2026-08-07 02:22 UTC,B-decouverte,gate B1 spray,8ia5VeYnd7Jo3HrSBbNCpfrvFUjjAWJemF6qZQEndpdT,light,gate B1 echouee: spray (dev_tokens=15),3,24,-,
 R-20260807-0222,2026-08-07 02:22 UTC,B-decouverte,gate B1 spray,AtVyn7tDFKQeRa3mMF7NWsTEbU4mBF7X3JN632TBdxZ1,light,gate B1 echouee: spray (dev_tokens=3),3,24,-,
 R-20260807-0222,2026-08-07 02:22 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,3,24,-,"commit 8d392f1 -- patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
+R-20260807-0335,2026-08-07 03:35 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,3 patterns / 162 wallets lus (SHA ok)
+R-20260807-0335,2026-08-07 03:35 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,3 lignes (P-001/P-002/P-003 Ecarte)
+R-20260807-0335,2026-08-07 03:35 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,162 lignes
+R-20260807-0335,2026-08-07 03:35 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
+R-20260807-0335,2026-08-07 03:35 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260807-0335,2026-08-07 03:35 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"415 wallets scannes (14j), 50 au-dessus du seuil 90 -- 1 wallet neuf apres filtrage des 49 deja connus"
+R-20260807-0335,2026-08-07 03:35 UTC,B-decouverte,gate B1 spray,Bg4DJkNjtAC2AQTqbSFqZR3aX4JynVpUxkUnf6o2adp8,light,gate B1 echouee: spray (dev_tokens=5),3,24,-,
+R-20260807-0335,2026-08-07 03:35 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,3,24,-,"commit a0f39b8 -- patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
