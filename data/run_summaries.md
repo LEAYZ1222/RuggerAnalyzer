@@ -406,3 +406,22 @@
 - Fichiers mis à jour : `patterns.csv` (+1 ligne, P-004 Écarté), `wallets.csv` (+1 ligne, Écartée), `run_log.csv`, `run_summaries.md` — commit unique sur `main`.
 - Budget restant pour le prochain run : 2 ultras / 23 heavies consommés ce run, la fenêtre 15 min se reconstitue normalement pour le run suivant.
 - Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
+
+## Run R-20260807-1431 — 2026-08-07 14:31 UTC
+
+### Refresh
+- 1 tracker actif ("Ring gangJEP - buyer 8St6e"), PnL 0, 0 rug, aucun trade. Ne correspond toujours à aucune ligne de `wallets.csv` → rien à recalculer.
+- Feed : aucune activité sur les trackers suivis sur les 7 derniers jours.
+- Aucun pattern en "En surveillance" ou "Rentable" à date → aucune transition automatique de statut. Les 4 patterns existants (P-001 à P-004) restent Écartés, inchangés.
+
+### Découverte — budget : 3 ultras alloués, 0 consommé, 0 heavy
+- 1029 wallets scannés (fenêtre 14j), 148 au-dessus du seuil de score 90. Après filtrage des 145 déjà connus, 3 candidats neufs :
+  - `EJw6Ea...gwwh7x` (score 95) : disqualifié immédiatement en gate B1 pour spray (créateur de 6 tokens sur son propre wallet).
+  - `BCCX7k...9WNqG` (score 95) : disqualifié immédiatement en gate B1 pour spray (créateur de 6 tokens sur son propre wallet).
+  - `8mF12j...NJTF3YHE` (score 95) : disqualifié immédiatement en gate B1 pour spray (créateur de 13 tokens sur son propre wallet).
+- Aucun candidat n'a atteint la gate B2 → **0 ultra ni heavy dépensé ce run**, budget plein pour le prochain (le run précédent avait consommé 1 ultra / 1 heavy, la fenêtre 15 min s'est reconstituée).
+
+### Bilan
+- Fichiers mis à jour : `wallets.csv` (+3 lignes, toutes Écartées, commit `9581852`), `run_log.csv`, `run_summaries.md` — sur `main`. `patterns.csv` inchangé (pas de commit sur ce fichier).
+- Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé ce run).
+- Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
