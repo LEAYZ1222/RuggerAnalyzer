@@ -114,3 +114,11 @@ R-20260807-0335,2026-08-07 03:35 UTC,A-refresh,feed signaux recents,-,light,ok,3
 R-20260807-0335,2026-08-07 03:35 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"415 wallets scannes (14j), 50 au-dessus du seuil 90 -- 1 wallet neuf apres filtrage des 49 deja connus"
 R-20260807-0335,2026-08-07 03:35 UTC,B-decouverte,gate B1 spray,Bg4DJkNjtAC2AQTqbSFqZR3aX4JynVpUxkUnf6o2adp8,light,gate B1 echouee: spray (dev_tokens=5),3,24,-,
 R-20260807-0335,2026-08-07 03:35 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,3,24,-,"commit a0f39b8 -- patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
+R-20260807-0423,2026-08-07 04:23 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,"3 patterns / 163 wallets lus (SHA ok)"
+R-20260807-0423,2026-08-07 04:23 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,3 lignes (P-001/P-002/P-003 Ecarte)
+R-20260807-0423,2026-08-07 04:23 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,163 lignes
+R-20260807-0423,2026-08-07 04:23 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"1 tracker actif (Ring gangJEP), pnl 0 rugs 0, aucune ligne wallets.csv liee -- rien a recalculer"
+R-20260807-0423,2026-08-07 04:23 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite sur trackers suivis (7 derniers jours)
+R-20260807-0423,2026-08-07 04:23 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1033 wallets scannes (14j), 151 au-dessus du seuil 90 -- 1 wallet neuf apres filtrage des 150 deja connus"
+R-20260807-0423,2026-08-07 04:23 UTC,B-decouverte,verification spray (creator intel),AdzjzxegjFf2DrfAievTs1cHoSrm1LVXp5hgurPfGm6j,light,gate B1 echouee: spray (5 tokens, launch-farm cluster, 12 sibling creators, dev_score 4) -- funder egalement non-CEX,3,24,-,
+R-20260807-0423,2026-08-07 04:23 UTC,C-ecriture,commit GitHub,data/wallets.csv,github,ok,3,24,-,"commit d52e517 -- patterns.csv inchange ce run ; 0 ultra / 0 heavy consommes"
