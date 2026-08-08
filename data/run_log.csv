@@ -175,7 +175,6 @@ R-20260807-0921,2026-08-07 09:21 UTC,A-refresh,feed signaux recents,-,light,ok,3
 R-20260807-0921,2026-08-07 09:21 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1027 wallets scannes (14j), 149 au-dessus du seuil 90 -- 0 wallet neuf, 100% deja connus (anti-redig 7j)"
 R-20260807-0921,2026-08-07 09:21 UTC,B-decouverte,filtrage bruit (hub/mother non createur),Bi4rd5FH5bYEN8scZ7wevxNZyNmKHdaBcvewdPFxYdLt,light,hors perimetre B1 (dev_tokens=0),3,24,-,"meme noeud de financement deja vu et ecarte du perimetre au run precedent -- non retenu"
 R-20260807-0921,2026-08-07 09:21 UTC,C-ecriture,commit GitHub,"data/run_log.csv, data/run_summaries.md",github,ok,3,24,-,"patterns.csv et wallets.csv inchanges ce run -- pas de commit sur ces fichiers"
-R-20260807-0921,2026-08-07 09:21 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
 R-20260807-1022,2026-08-07 10:22 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,"3 patterns / 170 wallets lus (SHA ok)"
 R-20260807-1022,2026-08-07 10:22 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,3 lignes (P-001/P-002/P-003 Ecarte)
 R-20260807-1022,2026-08-07 10:22 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,170 lignes
@@ -418,3 +417,9 @@ R-20260808-1325,2026-08-08 13:25 UTC,A-refresh,feed signaux recents,-,light,ok,3
 R-20260808-1325,2026-08-08 13:25 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1035 wallets scannes (14j), 149 au-dessus du seuil de score 90 -- 0 candidat neuf, lot entier deja connu (anti-redig <7j)"
 R-20260808-1325,2026-08-08 13:25 UTC,C-ecriture,pas de changement,"data/patterns.csv, data/wallets.csv",-,ok,3,24,-,aucun commit sur ces fichiers ce run
 R-20260808-1325,2026-08-08 13:25 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
+R-20260808-1422,2026-08-08 14:22 UTC,0-init,lecture CSV (patterns/wallets) + connexion GitHub+F Project,data/,github,ok,3,24,-,"SHA captures: patterns c1ad9f9, wallets ed0e815, run_log 5954663, run_summaries 8bc6ed0"
+R-20260808-1422,2026-08-08 14:22 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,0 tracker actif -- rien a recalculer
+R-20260808-1422,2026-08-08 14:22 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite (feed vide)
+R-20260808-1422,2026-08-08 14:22 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1035 wallets scannes (14j), 148 au-dessus du seuil de score 90 -- 0 candidat neuf, lot entier deja connu (anti-redig <7j)"
+R-20260808-1422,2026-08-08 14:22 UTC,C-ecriture,pas de changement,"data/patterns.csv, data/wallets.csv",-,ok,3,24,-,aucun commit sur ces fichiers ce run
+R-20260808-1422,2026-08-08 14:22 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
