@@ -638,3 +638,21 @@
 - Fichiers mis à jour : `run_log.csv`, `run_summaries.md` (commit unique sur `main`).
 - Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
 - Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
+
+## Run R-20260808-0322 — 2026-08-08 03:22 UTC
+
+### Refresh
+- 0 tracker actif — rien à recalculer côté surveillance
+- Aucune activité sur le feed (aucun rug/trade tracké)
+
+### Découverte — budget : 3 ultras alloués, 0 consommé, 0 heavy
+- 1035 wallets scannés (fenêtre 14j), 149 au-dessus du seuil de score 90
+- 1 seul candidat neuf hors base (`6dhT...VPEB4`, score 95) :
+  - Spray détecté : créateur sur 2 tokens depuis la même adresse
+  - → Écarté immédiatement (disqualification prioritaire sur le score, avant même la recherche du financeur CEX) — aucun ultra dépensé
+- Le reste des 149 wallets scorés étaient déjà connus (découverts entre le 05 et le 07/08, exclus par anti-redig <7j)
+
+### Bilan
+- Fichiers mis à jour : `wallets.csv` (commit b19f280 sur `main`), `run_log.csv`, `run_summaries.md`
+- Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé)
+- Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente)

@@ -337,3 +337,13 @@ R-20260808-0226,2026-08-08 02:26 UTC,A-refresh,feed signaux recents,-,light,ok,3
 R-20260808-0226,2026-08-08 02:26 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1035 wallets scannes (14j), 148 au-dessus du seuil de score 90 -- 0 candidat neuf, lot entier deja connu (anti-redig <7j)"
 R-20260808-0226,2026-08-08 02:26 UTC,C-ecriture,pas de changement,"data/patterns.csv, data/wallets.csv",-,ok,3,24,-,aucun commit sur ces fichiers ce run
 R-20260808-0226,2026-08-08 02:26 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
+R-20260808-0322,2026-08-08 03:22 UTC,0-init,connexion F Project + GitHub verifiee,-,-,ok,3,24,-,"4 patterns / 188 wallets lus (SHA ok)"
+R-20260808-0322,2026-08-08 03:22 UTC,0-init,lecture CSV,data/patterns.csv,github,ok,3,24,-,4 lignes (P-001/P-002/P-003/P-004 Ecarte)
+R-20260808-0322,2026-08-08 03:22 UTC,0-init,lecture CSV,data/wallets.csv,github,ok,3,24,-,188 lignes
+R-20260808-0322,2026-08-08 03:22 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"0 tracker actif -- rien a recalculer"
+R-20260808-0322,2026-08-08 03:22 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite (feed vide)
+R-20260808-0322,2026-08-08 03:22 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1035 wallets scannes (14j), 149 au-dessus du seuil de score 90 -- 1 candidat neuf hors base"
+R-20260808-0322,2026-08-08 03:22 UTC,B-decouverte,gate B1 echouee: spray,6dhTjeEyfFnd5iMEZ4BKe8iGwje3NKk1XtUntaVPEB4,light,gate B1 echouee: spray (dev_tokens=2),3,24,-,"score 95 mais createur de 2 tokens sur la meme adresse -- disqualification immediate, 0 ultra consomme, ecarte avant B2"
+R-20260808-0322,2026-08-08 03:22 UTC,C-ecriture,maj wallets.csv,data/wallets.csv,github,ok,3,24,-,"1 ligne ajoutee (candidat ecarte) -- commit b19f280"
+R-20260808-0322,2026-08-08 03:22 UTC,C-ecriture,pas de changement,data/patterns.csv,-,ok,3,24,-,aucun commit sur ce fichier ce run
+R-20260808-0322,2026-08-08 03:22 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
