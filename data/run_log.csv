@@ -412,3 +412,9 @@ R-20260808-1225,2026-08-08 12:25 UTC,A-refresh,feed signaux recents,-,light,ok,3
 R-20260808-1225,2026-08-08 12:25 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"419 wallets scannes (14j), 30 au-dessus du seuil de score 90 -- 0 candidat neuf, lot entier deja connu (anti-redig <7j)"
 R-20260808-1225,2026-08-08 12:25 UTC,C-ecriture,pas de changement,"data/patterns.csv, data/wallets.csv",-,ok,3,24,-,aucun commit sur ces fichiers ce run
 R-20260808-1225,2026-08-08 12:25 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
+R-20260808-1325,2026-08-08 13:25 UTC,0-init,lecture CSV (patterns/wallets) + connexion GitHub+F Project,data/,github,ok,3,24,-,"SHA captures: patterns c1ad9f9, wallets ed0e815, run_log d4247e6, run_summaries 589418d"
+R-20260808-1325,2026-08-08 13:25 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,0 tracker actif -- rien a recalculer
+R-20260808-1325,2026-08-08 13:25 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite (feed vide)
+R-20260808-1325,2026-08-08 13:25 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1035 wallets scannes (14j), 149 au-dessus du seuil de score 90 -- 0 candidat neuf, lot entier deja connu (anti-redig <7j)"
+R-20260808-1325,2026-08-08 13:25 UTC,C-ecriture,pas de changement,"data/patterns.csv, data/wallets.csv",-,ok,3,24,-,aucun commit sur ces fichiers ce run
+R-20260808-1325,2026-08-08 13:25 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
