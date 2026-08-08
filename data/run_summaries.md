@@ -865,3 +865,17 @@
 - Fichiers mis à jour : `wallets.csv` (commit fba61a5), `run_log.csv`, `run_summaries.md`.
 - Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
 - Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).
+## Run R-20260808-1823 — 2026-08-08 18:23 UTC
+
+### Refresh
+- 0 tracker actif sur le compte. Feed : aucune activité récente.
+- Aucun pattern en « En surveillance » ou « Rentable » à date → aucune transition automatique de statut. Les 4 patterns existants (P-001 à P-004) restent Écartés, inchangés.
+
+### Découverte — budget : 3 ultras alloués, 0 consommé, 0 heavy
+- 1035 wallets scannés (fenêtre 14j), 148 au-dessus du seuil de score 90. Sur ce lot, 24 wallets sans spray (une seule création chacun). Croisement complet avec les wallets déjà connus : **les 24 sont déjà présents dans wallets.csv**, tous déjà tranchés Écarté — **0 candidat neuf**.
+- Aucun candidat n'a atteint la gate B1 → **0 ultra ni heavy dépensé ce run**, budget plein pour le prochain.
+
+### Bilan — aucun changement, pas de commit sur `patterns.csv` / `wallets.csv`
+- Fichiers mis à jour : `run_log.csv`, `run_summaries.md` (commit unique sur `main`).
+- Budget restant pour le prochain run : 3 ultras / 24 heavies (fenêtre 15 min, rien consommé).
+- Prochaine action humaine suggérée : rien à valider ce run (aucun pattern Validé, aucune config tracker en attente).

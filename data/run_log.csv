@@ -439,3 +439,9 @@ R-20260808-1722,2026-08-08 17:22 UTC,B-decouverte,intel createur (verification s
 R-20260808-1722,2026-08-08 17:22 UTC,C-ecriture,ecriture wallets.csv (1 nouvelle ligne Ecarte),data/wallets.csv,github,ok,3,24,-,commit fba61a5
 R-20260808-1722,2026-08-08 17:22 UTC,C-ecriture,pas de changement,data/patterns.csv,-,ok,3,24,-,aucun commit sur ce fichier ce run
 R-20260808-1722,2026-08-08 17:22 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
+R-20260808-1823,2026-08-08 18:23 UTC,0-init,lecture CSV (patterns/wallets) + connexion GitHub+F Project,data/,github,ok,3,24,-,"SHA captures: patterns c1ad9f9, wallets 80687ea, run_log b8b346d, run_summaries 5617629"
+R-20260808-1823,2026-08-08 18:23 UTC,A-refresh,refresh trackers actifs,-,light,ok,3,24,-,"0 tracker actif -- rien a recalculer"
+R-20260808-1823,2026-08-08 18:23 UTC,A-refresh,feed signaux recents,-,light,ok,3,24,-,aucune activite (feed vide)
+R-20260808-1823,2026-08-08 18:23 UTC,B-decouverte,decouverte de wallets recents (B1),-,light,ok,3,24,-,"1035 wallets scannes (14j), 148 au-dessus du seuil de score 90, 24 sans spray (dev_tokens=1) -- tous deja presents dans wallets.csv (Ecarte definitif) -- 0 candidat neuf"
+R-20260808-1823,2026-08-08 18:23 UTC,C-ecriture,pas de changement,"data/patterns.csv, data/wallets.csv",-,ok,3,24,-,aucun commit sur ces fichiers ce run
+R-20260808-1823,2026-08-08 18:23 UTC,D-log,ecriture run_summaries.md + run_log.csv,-,-,ok,3,24,-,
